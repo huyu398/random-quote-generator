@@ -23,9 +23,7 @@ function App() {
   return (
     <Container maxWidth='lg'>
       <Header handleRefresh={refreshQuote}/>
-      <Container maxWidth='sm'>
-        <Quote text={quote}/>
-      </Container>
+      <Quote text={quote}/>
     </Container>
   )
 }
