@@ -3,7 +3,7 @@ import { Container } from '@material-ui/core';
 import axios from 'axios';
 
 import Header from './Header.js'
-import Quote from './Quote.js'
+import Quote from './Quote/Quote.js'
 
 function App() {
   const [quote, setQuote] = useState('');
