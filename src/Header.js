@@ -1,5 +1,5 @@
-import { Box, Button } from '@material-ui/core'
-import { Refresh } from '@material-ui/icons'
+import { Box, Button } from '@material-ui/core';
+import { Refresh } from '@material-ui/icons';
 
 function Header(props) {
   return (
