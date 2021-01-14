@@ -11,8 +11,8 @@ function App() {
   const refreshQuote = () => {
     axios.get('https://quote-garden.herokuapp.com/api/v3/quotes/random')
       .then(res => {
-        const quoteText = res.data.data[0].quoteText;
-        setQuote(quoteText);
+        const quote = res.data.data[0];
+        setQuote(quote);
       });
   };
 
@@ -23,7 +23,7 @@ function App() {
   return (
     <Container maxWidth='lg'>
       <Header handleRefresh={refreshQuote}/>
-      <Quote text={quote}/>
+      <Quote data={quote}/>
     </Container>
   )
 }
