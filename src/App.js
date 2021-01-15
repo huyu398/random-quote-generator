@@ -6,7 +6,7 @@ import Header from './Header.js'
 import Quote from './Quote/Quote.js'
 
 function App() {
-  const [quote, setQuote] = useState('');
+  const [quote, setQuote] = useState({});
 
   const refreshQuote = () => {
     axios.get('https://quote-garden.herokuapp.com/api/v3/quotes/random')

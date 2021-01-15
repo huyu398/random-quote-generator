@@ -5,7 +5,9 @@ import QuoteAuthor from './QuoteAuthor.js';
 
 function Quote(props) {
   return (
-    <Grid container spacing={10}>
+    props.data.quoteText === undefined
+    ? ''
+    : <Grid container spacing={10}>
       <Grid item xs={12}>
         <QuoteText text={props.data.quoteText} />
       </Grid>
