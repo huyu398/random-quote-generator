@@ -23,7 +23,7 @@ function QuoteAuthor(props) {
   const classes = useStyles();
 
   return (
-    <Link to="/author" style={{textDecoration: 'none'}}>
+    <Link to={`/author/${props.author}`} style={{textDecoration: 'none'}}>
       <Container maxWidth="sm" className={classes.authorCard}>
         <Grid container justify="space-between" alignItems="center">
           <Grid item>

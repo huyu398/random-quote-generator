@@ -11,9 +11,12 @@ function Quote(props) {
       <Grid item xs={12}>
         <QuoteText text={props.data.quoteText} />
       </Grid>
-      <Grid item xs={12}>
-        <QuoteAuthor author={props.data.quoteAuthor} genre={props.data.quoteGenre} />
-      </Grid>
+      {
+        props.data.quoteAuthor !== undefined &&
+          <Grid item xs={12}>
+            <QuoteAuthor author={props.data.quoteAuthor} genre={props.data.quoteGenre} />
+          </Grid>
+      }
     </Grid>
   )
 }

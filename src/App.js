@@ -7,7 +7,7 @@ function App() {
   return (
     <BrowserRouter>
       <Route exact path='/' component={RandomQuote} />
-      <Route path='/author' component={AuthorQuote} />
+      <Route path='/author/:author' component={AuthorQuote} />
     </BrowserRouter>
   )
 }
